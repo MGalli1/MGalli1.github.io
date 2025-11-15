@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merceria Galli - Eleganti fili e oltre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @keyframes fadeInZoom {
+            0% { opacity: 0; transform: scale(0.95); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        .fade-in-zoom {
+            animation: fadeInZoom 1.5s ease-in-out;
+        }
+        .bg-gradient-custom {
+            background: #FFFFFF;
+        }
+.brand-hover:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
+            transition: all 0.3s ease;
+        }
+        .btn-cta {
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .btn-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-sans bg-white text-gray-800 min-h-screen">
+<div class="container mx-auto px-4">
+    
+        <section class="min-h-screen flex flex-col justify-center items-center py-20">
+            <img src="Logo.png" alt="Merceria Galli" class="fade-in-zoom w-full max-w-md md:max-w-lg mb-8">
+            <h2 class="text-xl md:text-2xl text-center text-gray-600 font-light tracking-wide mt-4">
+                Eleganza e comfort nel cuore della città dal 1985
+            </h2>
+            <div class="mt-12 animate-bounce">
+                <i data-feather="chevron-down" class="text-gray-500"></i>
+            </div>
+        </section>
+
+        <section class="py-20 fade-in-section">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-semibold text-center mb-12">
+                    Chi Siamo
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            Da oltre 35 anni, <span class="font-semibold">Merceria Galli</span> è il punto di riferimento per chi cerca 
+                            qualità e servizio nel mondo della merceria e dell'abbigliamento intimo.
+                        </p>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            La nostra selezione comprende:
+                        </p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="mr-2 text-green-500"></i>
+                                Intimo per uomo, donna e bambino
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="mr-2 text-green-500"></i>
+                                Calze, collant e pigiami di alta qualità
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="mr-2 text-green-500"></i>
+                                Abbigliamento leggero e confortevole
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="mr-2 text-green-500"></i>
+                                Accessori e articoli di merceria selezionati
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-100 rounded-xl p-8 h-full flex items-center justify-center">
+                        <img src="http://static.photos/retail/640x360/42" alt="Interno negozio" class="rounded-lg shadow-md w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white fade-in-section">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-semibold text-center mb-12">
+                    I Nostri Brand
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-center justify-center">
+                    <div class="flex flex-col items-center">
+                        <img src="https://www.adigeo.com/fileadmin/user_upload/GLOBAL/brand_stores/logos/lovable.jpg" 
+                             alt="Lovable" 
+                             class="brand-hover max-h-24 object-contain mb-4">
+                        <p class="text-gray-600 text-center">Intimo elegante e confortevole</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Logo_Dim.png" 
+                             alt="DIM" 
+                             class="brand-hover max-h-24 object-contain mb-4">
+                        <p class="text-gray-600 text-center">Calze e collant di alta qualità</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-gray-100 rounded-full w-24 h-24 flex items-center justify-center mb-4">
+                            <i data-feather="plus" class="text-4xl text-gray-500"></i>
+                        </div>
+                        <p class="text-gray-600 text-center">E molti altri marchi conosciuti</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 fade-in-section">
+            <div class="max-w-2xl mx-auto text-center px-4">
+                <h2 class="text-3xl md:text-4xl font-semibold mb-8">
+                    Vieni a trovarci
+                </h2>
+                <p class="text-gray-700 mb-12 leading-relaxed">
+                    Siamo a tua disposizione per consigli e suggerimenti. <br>
+                    Vuoi ricevere informazioni sui prodotti o sugli orari?
+                </p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScsadsu2G2DVPk-S3ETw4L2edTpuqNSVDJeuHSc8QkadCGaqA/viewform?usp=dialog" 
+                   target="_blank" 
+                   class="btn-cta inline-block bg-rose-500 hover:bg-rose-600 text-white font-medium py-3 px-8 rounded-lg shadow-md">
+                    Contattaci ora
+                </a>
+            </div>
+        </section>
+        <footer class="py-8 border-t border-gray-200 text-center text-gray-500 text-sm">
+            <p>© 2023 Merceria Galli - Tutti i diritti riservati</p>
+        </footer>
+    </div>
+
+    <script>
+        const fadeInSections = document.querySelectorAll('.fade-in-section');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        fadeInSections.forEach(section => {
+            observer.observe(section);
+        });
+
+        feather.replace();
+    </script>
+</body>
+</html>
