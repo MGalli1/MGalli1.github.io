@@ -120,10 +120,11 @@
 </main>
 
 <footer class="border-t border-gray-100 mt-16 py-6 text-center text-sm text-gray-500">
-    © 2025 Merceria Galli
+    © <span id="year"></span> Merceria Galli
 </footer>
 
 <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
     feather.replace();
     const observer=new IntersectionObserver((e)=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.18});
     document.querySelectorAll('.fade-in-section').forEach(s=>observer.observe(s));
